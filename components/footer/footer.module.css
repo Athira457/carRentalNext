@@ -1,0 +1,191 @@
+/* footer section style starts here */
+.footerSection{
+    background-color: black;
+    border-radius: 10px;
+    width: 93%;
+    height: 303px;
+    margin-left: 40px;
+    margin-top: 600px;
+    color: white;
+    padding: 40px 16px 20px 26px;
+}
+
+.logoFooter p{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+}
+
+.footerMenu li a{
+    color: white;
+    margin-right: 2px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+}
+
+.footerItems{
+    list-style: none;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footerItems a:hover{
+    text-decoration: underline;
+}
+
+.divisionFooter{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(73, 69, 69);
+}
+
+.footerMenu p{
+    margin-left: 140px;
+    margin-top: 40px;
+}
+
+.Companies{
+    display: flex;
+    list-style: none;
+    margin-left: 100px;
+}
+
+.Companies li{
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.footerSecurity{
+    margin-left: 100px;
+}
+
+.footerSecurity p{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+.socialIcons{
+    display: flex;
+    list-style: none;
+}
+
+.socialIcons li{
+    margin-right: 20px;
+}
+
+.socialIcons a:hover{
+    background-color: #b3abab;
+}
+
+.footerSecurity .lock{
+    padding-left: 40px;
+}
+
+.copyright p{
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+.mobileFooter,.mobieBottom{
+    display: none;
+}
+
+
+/* responsive style */
+
+@media screen and (min-device-width: 300px) and (max-device-width: 768px) {
+    .footerContainer{
+        display:none;
+    }
+    .footerSection{
+        background-color: transparent;
+        padding: 0;
+        margin-top: 700px;
+        margin-left: 0;
+    }
+    .mobileFooter {
+        display: block;
+        padding-left: 0px;
+        margin-left: 40px;
+        width: 320px;
+    }
+    .mobileIcon{
+        background-color: rgb(196, 197, 197);
+        color: #000;
+        margin-left: 0;
+        height: 280px;
+        padding: 2px;
+        width: 320px;
+    }
+    .sectionTop{
+        display: flex;
+    }
+    .sectionTop p{
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    .social{
+        margin-left: 100px;
+    }
+    .social,.links{
+        list-style: none;
+        display: flex;
+        gap: 10px;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-decoration: none;
+        color: black; 
+        padding-left: 5px;
+    }
+    .Companies{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .links .linkStyle{
+        font-size: 14px;
+        padding-top: 20px;
+        text-decoration: none;
+        color: black; 
+    }
+    .mobieBottom{
+        display: block;
+        background-color: #0c0c0c;
+        color: rgb(253, 251, 251);
+        height: 200px;
+        margin-top: 0;
+        padding-top: 20px;
+        margin-left: 40px;
+        width: 323px;
+    }
+    .mobieBottom p{
+        margin-left: 100px;
+        color: white;
+    }
+    .mobieBottom img{
+        padding-left: 150px;
+    }
+    .Companies{
+        margin-left: 6px;
+    }
+    .copy{
+        border-top: #353434 solid 1px;
+    }
+    .copy p{
+        margin-left: 60px;
+        display: inline;
+        font-size: 10px;
+    }
+}

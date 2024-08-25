@@ -1,0 +1,60 @@
+/* location section style starts here */
+
+.locationdiv {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 93%;
+    margin-left: 40px;
+}
+
+.locationdiv h1{
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 51px;
+    color: white;
+    text-align: center;
+    padding: 40px 0 10px 0;
+}
+
+.locationList{
+    list-style: none;
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 40px;
+}
+
+.locationList li{
+    color: white;
+    padding: 10px 0;
+    border-right: 1px solid #353434;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.locationList li:last-child {
+    border-right: none;
+}
+
+/* Responsive styling */
+@media screen and (min-device-width: 300px) and (max-device-width: 768px) {
+    .locationdiv {
+        padding-left: 0px;
+        width: 300px;
+    }
+
+    .locationList{
+        justify-items: left;
+        padding-left: 55px;
+        margin-left: 0;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr)
+    }
+
+    .locationList li {
+        font-size: 14px;
+        display: block;
+        border-right: none;
+    }
+}

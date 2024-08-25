@@ -1,0 +1,68 @@
+
+/* Summer section style starts here */
+.carBanner{
+    background-image: url("../../public/assets/images/car.svg");
+    background-position: center;
+    width: 95%;
+    height: 405px;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+
+.carBanner p{
+    width: 31%;
+    margin-left: 450px;
+    font-family: poppins;
+    text-align: center;
+    padding-top: 240px;
+    color: white;
+}
+
+.offerBtn{
+    background-color: #009046;
+    width: 153px;
+    height: 31.49px;
+    cursor: pointer;
+    border: none;
+    border-radius: 32px;
+    opacity: 0px;
+}
+
+.offerBtn a{
+    color: white;
+    text-decoration: none;
+}
+
+.sliderDots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot:hover,
+.dot:focus {
+    background-color: #717171;
+}
+
+/* Responsive style starts here */
+@media screen and (min-device-width: 300px) and (max-device-width: 768px) {
+    .carBanner{
+        margin-left: 10px;
+        padding-left: 0;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    .carBanner p{
+        margin-left: 20px;
+        width: 100%;
+    }
+}

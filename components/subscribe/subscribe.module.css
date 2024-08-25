@@ -1,0 +1,229 @@
+/* subscribe section styling starts here */
+.subscribe {
+    max-width: fit-content;
+    padding: 50px 40px 0px 82px;
+    display: flex;
+    width: 100%;
+}
+
+.subscribe .subscribeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 0px 0px 20px;
+}
+
+.subscribe .subscribeInfo h3 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 51px;
+    text-align: left;
+
+}
+
+.subscribe .inputDiv {
+    display: flex;
+    gap: 15px;
+}
+
+.subscribe p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: left;
+}
+
+#subscribeBtn {
+    cursor: pointer;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #e21e26;
+    color: #fff;
+}
+
+.subscribe .inputDiv input {
+    height: 35px;
+    width: 200px;
+    border: none;
+    background-color: rgb(244, 250, 250);
+}
+
+.subscribe .inputDiv input.inputField {
+    padding-left: 10px;
+}
+
+.subscribe .phoneImage {
+    background: #E21E26;
+    width: 644px;
+    height: 450px;
+    display: flex;
+}
+
+.subscribe .phoneImage .firstImage {
+    display: grid;
+    justify-content: flex-start;
+    align-items: end;
+    width: 256px;
+}
+
+.subscribe .phoneImage .contents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    color: #fff;
+    width: 300px;
+}
+
+#getLinkBtn {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe .phoneImage .contents .phnNumber {
+    height: 40px;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+
+}
+
+.subscribe .phoneImage input.phnNumber {
+    padding-left: 10px;
+}
+
+.subscribe .socialMedia {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.subscribe .phoneImage .contents {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subscribe .phoneImage .contents p {
+    margin-top: 50px;
+}
+
+.mobileSubscribe ,.mobileFooter{
+    display: none;
+}
+
+.phoneImage {
+    display: block;
+}
+
+/* Responsive styling */
+@media screen and (min-device-width: 300px) and (max-device-width: 768px) {
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    
+    .subscribe .subscribeInfo {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .subscribe .subscribeInfo h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .subscribe .inputDiv {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .subscribe .inputDiv input {
+        width: 100%;
+        height: 45px;
+        padding-left: 15px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .subscribe p {
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 20px;
+    }
+    
+    #subscribeBtn {
+        width: 100%;
+        max-width: 200px;
+        height: 45px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    
+    .mobileSubscribe {
+        display: block;
+        background-color: #E21E26;
+        border-radius: 10px;
+        height: auto;
+    }
+    .subscribeContent{
+        display: flex;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .socialMedia {
+        display: flex;
+        flex-direction: column;
+        margin-top: 21px;
+        width: 165px;
+    }
+    
+    .socialMedia p {
+        margin-top: 30px;
+        color: #fff;
+       
+    }
+    
+    .mobileInput {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    
+    .mobileInput .inputField {
+        height: 45px;
+        width: 100%; 
+        border-radius: 5px;
+        font-size: 16px;
+        border: none;
+    }
+    
+    #getLinkBtn {
+        background-color: #000;
+        color: #fff;
+        margin-left: 10px;
+    }
+    
+    .subscribe .phoneImage {
+        display: none;
+    }
+}

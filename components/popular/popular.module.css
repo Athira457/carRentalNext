@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+/* popular car section style starts here */
+.container{
+    padding-top: 10px;
+    font-family: poppins;
+}
+
+/* makes scrolling possible */
+.cardContainer {
+    display: flex;
+    overflow-x: auto; 
+    overflow-y: none;
+    scroll-behavior: smooth; 
+    scrollbar-width: none;
+    padding: 10px 0; 
+    width: calc(100% - 20px); 
+}
+
+.container h1 {
+    margin: 20px 0;
+    font-size: 34.74px;
+    font-weight: 400;
+    line-height: 52.11px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    height: 290px;
+    width: 754px;
+    border: 1px solid #d9d9d9;
+    margin-right: 22px;
+    flex-shrink: 0; 
+}
+
+.description {
+    padding: 20px 40px;
+    width: 300px;
+}
+
+.description h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.description p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.5px;
+    text-align: left;
+    width: 298px;
+}
+
+.carInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.carInfo p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    width: 200px;
+}
+
+.carInfo2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.carInfo2 p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    width: 200px;
+}
+
+.bookNow{
+    width: 128px;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: white;
+    background-color: #E21E26;
+    margin: 10px 0px;
+}
+

@@ -1,0 +1,246 @@
+/* Banner style starts here */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+.bannerTop{
+    background-image: url('../../public/assets/images/bannertop.svg');
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 130px;
+    padding: 40px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+.bannerContainer{
+    display: flex;
+}
+
+.topText a{
+    opacity: 90%;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 30px;
+    letter-spacing: -0.035em;
+    text-decoration: none;
+    padding-left: 80px;
+}
+
+.topText a:hover{
+    text-decoration: underline;
+    opacity: 100%;
+}
+
+#vehicleType{
+    background-color: rgb(255, 255, 255 , 0.1);
+    color: white;
+    font-family: poppins;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 159px;
+    height: 29px;
+    top: 153px;
+    margin-left: 100px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.block{
+    display: flex;
+}
+
+.check{
+    width: 600px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 80px;
+    gap: 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.location, #location{
+    width: 188px;
+    height: 42px;
+    color: black;
+    margin-right: 10px;
+    border-radius: 18px;
+    cursor: pointer;
+    background: url('../../public/assets/images/location.svg') 20px white no-repeat;
+    text-align: center;
+}
+
+#datetimeInput{
+    cursor: pointer;
+    width: 188px;
+    height: 42px;
+    margin-right: 10px;
+    padding-right: 12px;
+    border-radius: 25px;
+    text-align: center;
+    font-family: Poppins;
+    border: none;
+    border-color: white;
+    
+    
+}
+#datetimeInput::-webkit-calendar-picker-indicator {
+    background: url('../../public/assets/images/calendar.svg') 60px white no-repeat;
+    background-position: right;
+}
+
+.searchBtn{
+    width: 64px;
+    height: 42px;
+    margin-top: 8px;
+    left: 757px;
+    margin-left: 10px;
+    opacity: 0px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar{
+    height: 40px;
+    width: 1px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 760px;
+    background-color: white;
+}
+
+.bookBtn{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 132px;
+    height: 42px;
+    margin-top: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+
+.bottomText{
+    display: flex;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.bottomText .playBtn{
+    margin-top: 30px;
+}
+
+.bottomText p{
+    margin-left: 50px;
+    margin-top: 40px;
+    width: 50%;
+    color: white;
+}
+
+.bot{
+    display: flex;
+    flex-direction: column;
+}
+
+.bot .callBot{
+    margin-top: 40px;
+    height: 40px;
+}
+
+.bot .chatBot{
+    margin-top: 45px;
+    margin-left: 2px;
+    height: 40px;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+    box-shadow: #181717;
+    z-index: -1;
+}
+
+.mobileButton, .linkText{
+    display: none;
+}
+
+/* Responsive styling of banner section */
+@media screen and (min-device-width: 300px) and (max-device-width: 768px) {
+    .bannerTop{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+        width: 460px;
+    }
+    .bottomText{
+        display: inline;
+        text-align: left;
+    }
+    .bottomText .playBtn{
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+    .topText, .block{
+        display: none;
+    }
+    .bot, .callBot {
+        margin-top: 0;
+        padding: 0;
+    }
+    .bot a{
+        height: 40px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .bottomText p{
+        margin-top: 0px;
+        padding-top: 10px;
+        margin-left: 14px;
+        width: 300px;
+    }
+    .linkText{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 10px 0;
+        .link{
+            text-decoration: none;
+            color: #181717;
+            padding-right: 10px;
+            margin-top: 9px;
+            font-size: 10px;
+            font-weight: 700;
+        } 
+        #vehicleType{
+            margin-left: 0px;
+            font-size: 14px;
+            color: #181717;
+        } 
+    }
+    .mobileButton{
+        padding-left: 80px;
+        display: inline;
+        .book{
+        background-color: #E21E26;
+        color: white;
+        border: none;
+        margin-right: 10px;
+        border-radius: 10px;
+        padding: 15px;
+        cursor: pointer;
+    }
+    .book1{
+        background-color: white;
+        color: #E21E26;
+        border: 1px solid #E21E26;
+        margin-right: 10px;
+        border-radius: 10px;
+        padding: 15px;
+        cursor: pointer;
+    }
+    }
+}
